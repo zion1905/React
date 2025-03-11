@@ -1,0 +1,119 @@
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .product-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .product-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .product-price {
+    font-size: 1rem;
+    color: #007bff;
+    font-weight: 600;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links span {
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .nav-links span:hover {
+    color: #007bff;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1rem;
+    transition: border 0.3s;
+  }
+  
+  .search-bar input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    .nav-links {
+      gap: 10px;
+    }
+  
+    .search-bar input {
+      width: 100%;
+    }
+  }
+  
